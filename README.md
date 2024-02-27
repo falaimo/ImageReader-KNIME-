@@ -10,3 +10,5 @@ Per creare l'env è necessario eseguire i seguenti steps:
 - attivarlo: **conda activate pytorch**
 - installare i pacchetti necessari: **conda install -c pytorch torchvision pandas cudatoolkit**
 Le cudatoolkit sono necessarie se si ha una GPU nvida e la si vuole utilizzare (sempre che l'hardware sia supportato)
+# Utilizzo
+Il codice deve essere inserito all'interno di un nodo Python Script, mentre l'**env** deve essere associato al nodo tramite una variabile creata utilizzando il nodo **Python Environement Propagation**, che deve *puntare* all'**env** creato con Anaconda.
